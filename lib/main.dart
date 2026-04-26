@@ -23,12 +23,7 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(
-        255,
-        46,
-        222,
-        128,
-      ), // Bonus: background color
+      backgroundColor: const Color.fromARGB(255, 32, 254, 132),
       appBar: AppBar(
         title: const Text("My Developer Profile"),
         centerTitle: true,
@@ -37,29 +32,21 @@ class ProfilePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
-            Icon(
-              Icons.person, // Bonus: icon
-              size: 80,
-              color: Colors.blue,
-            ),
+            Icon(Icons.person, size: 80, color: Colors.blue),
             SizedBox(height: 20),
 
-            // Full Name (Large + Bold)
             Text(
               "Jeric Durban Garsuta",
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 10),
 
-            // Section
             Text("BSIT-3A", style: TextStyle(fontSize: 18)),
             SizedBox(height: 10),
 
-            // Age
             Text("Age: 24", style: TextStyle(fontSize: 16)),
             SizedBox(height: 10),
 
-            // Hobbies
             Text(
               "My Hobbies:",
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
